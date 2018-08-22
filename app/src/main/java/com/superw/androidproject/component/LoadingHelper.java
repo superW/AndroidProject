@@ -12,8 +12,8 @@ public class LoadingHelper {
     private View loadingView;
 
     public LoadingHelper(Context context) {
-        loadingView = LayoutInflater.from(context)
-                .inflate(R.layout.loading, null);
+//        loadingView = LayoutInflater.from(context)
+//                .inflate(R.layout.loading, null);
         hide();
     }
 

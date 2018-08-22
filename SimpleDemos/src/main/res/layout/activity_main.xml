@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.autoai.android.demos.MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/AndroidSystemInfoBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="AndroidSystemInfoActivity" />
+
+            <Button
+                android:id="@+id/DiskLruCacheBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="DiskLruCacheActivity" />
+
+            <Button
+                android:id="@+id/LoadDexJarBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="LoadDexJarActivity" />
+
+            <Button
+                android:id="@+id/NetStateModifyBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="NetStateModifyActivity" />
+
+            <Button
+                android:id="@+id/PermissionManageBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="PermissionManageActivity" />
+
+            <Button
+                android:id="@+id/ThreadServiceCycleBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ThreadServiceCycleActivity" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scrollbars="vertical"
+                android:text="Hello World!" />
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
+

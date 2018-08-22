@@ -1,6 +1,7 @@
 package com.superw.androidproject.presenter;
 
 import com.superw.androidproject.base.BasePresenterImpl;
+import com.superw.androidproject.component.HttpHelper;
 import com.superw.androidproject.presenter.intf.MainPresenter;
 import com.superw.androidproject.view.MainView;
 
@@ -9,5 +10,6 @@ import com.superw.androidproject.view.MainView;
  */
 
 public class MainPresenterImpl extends BasePresenterImpl<MainView> implements MainPresenter {
+
 
 }

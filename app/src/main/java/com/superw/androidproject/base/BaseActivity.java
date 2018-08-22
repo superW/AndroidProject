@@ -9,13 +9,15 @@ import android.widget.FrameLayout;
 import com.superw.androidproject.component.LoadingHelper;
 import com.superw.androidproject.util.TShow;
 
+import butterknife.ButterKnife;
+
 /**
  * Created by wangyanchao on 2017/2/15.
  */
 
 public abstract class BaseActivity<P extends BasePresenter> extends AppCompatActivity implements BaseView {
 
-    private LoadingHelper loadingHelper;
+//    private LoadingHelper loadingHelper;
 
 
     protected P mPresenter;
@@ -30,9 +32,11 @@ public abstract class BaseActivity<P extends BasePresenter> extends AppCompatAct
 
         setContentView(getLayoutId());
 
-        loadingHelper = new LoadingHelper(this);
-        FrameLayout decorView = (FrameLayout) getWindow().getDecorView();
-        decorView.addView(loadingHelper.getLoadingView());
+//        loadingHelper = new LoadingHelper(this);
+//        FrameLayout decorView = (FrameLayout) getWindow().getDecorView();
+//        decorView.addView(loadingHelper.getLoadingView());
+
+        ButterKnife.bind(this);
 
         initViews(savedInstanceState);
     }
@@ -43,10 +47,6 @@ public abstract class BaseActivity<P extends BasePresenter> extends AppCompatAct
 
     protected abstract void initViews(Bundle savedInstance);
 
-    public <T extends View> T getViewById(int resId) {
-        return (T) super.findViewById(resId);
-    }
-
     @Override
     public void showToast(String msg) {
         TShow.shortTime(this, msg);
@@ -54,16 +54,24 @@ public abstract class BaseActivity<P extends BasePresenter> extends AppCompatAct
 
     @Override
     public void showLoading() {
-        loadingHelper.show();
+//        loadingHelper.show();
     }
 
     @Override
     public void hideLoading() {
-        loadingHelper.hide();
+//        loadingHelper.hide();
     }
 
     @Override
     public void updateUI() {
 
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        if (mPresenter != null) {
+            mPresenter.detachView();
+        }
     }
 }

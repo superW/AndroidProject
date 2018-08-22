@@ -1,1 +1,2 @@
-include ':app', ':library'
+include ':app', ':TimeIntervalControl', ':LaunchServices', ':Volley', ':DownloadHelper', ':ToolKit', ':SimpleDemos'
+include ':ForegroundService'

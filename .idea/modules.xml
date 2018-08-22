@@ -3,8 +3,14 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/AndroidProject.iml" filepath="$PROJECT_DIR$/AndroidProject.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DownloadHelper/DownloadHelper.iml" filepath="$PROJECT_DIR$/DownloadHelper/DownloadHelper.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ForegroundService/ForegroundService.iml" filepath="$PROJECT_DIR$/ForegroundService/ForegroundService.iml" />
+      <module fileurl="file://$PROJECT_DIR$/LaunchServices/LaunchServices.iml" filepath="$PROJECT_DIR$/LaunchServices/LaunchServices.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SimpleDemos/SimpleDemos.iml" filepath="$PROJECT_DIR$/SimpleDemos/SimpleDemos.iml" />
+      <module fileurl="file://$PROJECT_DIR$/TimeIntervalControl/TimeIntervalControl.iml" filepath="$PROJECT_DIR$/TimeIntervalControl/TimeIntervalControl.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ToolKit/ToolKit.iml" filepath="$PROJECT_DIR$/ToolKit/ToolKit.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Volley/Volley.iml" filepath="$PROJECT_DIR$/Volley/Volley.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/library/library.iml" filepath="$PROJECT_DIR$/library/library.iml" />
     </modules>
   </component>
 </project>
