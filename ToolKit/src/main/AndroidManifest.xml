@@ -24,7 +24,8 @@
         <activity android:name=".eg.ShellUtilsActivity" />
         <activity android:name=".eg.StorageUtilsActivity" />
         <activity android:name=".eg.ThreadPoolManagerActivity" />
-        <activity android:name=".eg.LogManagerActivity"></activity>
+        <activity android:name=".eg.LogManagerActivity" />
+        <activity android:name=".eg.CommandExecutionActivity"></activity>
     </application>
 
 </manifest>

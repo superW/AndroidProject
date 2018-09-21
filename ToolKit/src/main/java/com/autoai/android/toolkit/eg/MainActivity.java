@@ -20,6 +20,14 @@ public class MainActivity extends Activity {
 
         textView = (TextView) findViewById(R.id.textView);
 
+        findViewById(R.id.commandExeBtn).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, CommandExecutionActivity.class);
+                startActivity(intent);
+            }
+        });
+
         findViewById(R.id.easySpBtn).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
